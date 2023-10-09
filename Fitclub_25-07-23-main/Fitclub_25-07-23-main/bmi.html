@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="signup.css">
+   
+    <title>BMI Calcu</title>
+    <style>
+        .h2{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <h3>
+        <nav>
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+        <h4>
+            <ul class="nav__links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="pricing.html">Pricing</a></li>
+          <li class="link"><a href="services.html">Service</a></li>
+          <li class="link"><a href="gallery.html">Gallery</a></li>
+          <li class="link"><a href="bmi.html">BMI Calculator</a></li>
+        </ul>
+        </h4>
+        
+        <a href="signup.html">
+            <button class="btn">Join Now</button></a>
+
+        
+        
+          <style>
+            body {
+                font-family: "Poppins", sans-serif;
+                
+            }
+            .container {
+                max-width: 500px;
+                margin: 0 auto;
+                text-align: center;
+                padding: 6%;
+            }
+            h4{
+                font-size: medium;
+                font-weight: 100;
+            }
+            .header__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+            
+            .info{
+                color: white;
+                /* align-self: auto; */
+                /* displays: flex; */
+                justify-content: center;
+                /* align-items: center; */
+                /* height: 100vh;  */
+
+            }
+        </style> 
+    </h3>
+    <header class="section__container header__container">
+        <div class="header__content">
+          <span class="bg__blur"></span>
+          <span class="bg__blur header__blur"></span>
+          <!-- <h4>BEST FITNESS IN THE TOWN</h4> -->
+          <h1><span>BMI</span> BODY MASS INDEX</h1>
+          <p>BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.</p>
+
+    <div class="header__image">
+        <img src="assets/bmi.jpg" alt="header" />
+      </div>
+     
+      <!-- <div class="info">
+        <p>BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.</p>
+      </div> -->
+   
+    </head>
+    <h3>
+        
+        <body>
+        <div class="container">
+            <h1>BMI Calculator</h1>
+            <style>
+                .container{
+                    color: white;
+                    margin-bottom: 0%;
+                    font-family: "Poppins", sans-serif;
+                }
+            </style>
+            <form id="bmiForm">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" step="0.01" required><br><br>
+    
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" step="0.01" required><br><br>
+    
+                <input type="button" value="Calculate BMI" onclick="calculateBMI()" id="calculateButton">
+            </form>
+            <div class="Result">
+                <h2>Result</h2>
+            <h3>
+                <p>Your BMI is: <span id="result"></span></p>
+            </h3>
+            <style>
+                .Result{
+                    color: orange;
+                }
+            </style>
+            </div>
+    
+            
+            
+        </div>
+    
+        <script>
+            function calculateBMI() {
+                var weight = parseFloat(document.getElementById("weight").value);
+                var height = parseFloat(document.getElementById("height").value);
+    
+                if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                    alert("Please enter valid weight and height values.");
+                    return;
+                }
+    
+                var bmi = weight / Math.pow(height / 100, 2);
+                document.getElementById("result").textContent = bmi.toFixed(2);
+            }
+        </script>
+        <style>
+            #calculateButton {
+              background-color: orange;
+              color: white;
+              border: none;
+              padding: 1px 7px;
+              cursor: pointer;
+              font-size: 25px;
+              outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+            }
+          </style>
+          
+<body>
+    </h3>
+
+    
+
+
+
+</body>
+</html>

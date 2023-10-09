@@ -1,0 +1,120 @@
+/* Apply a specific class to your images */
+.equal-size-image {
+    width: 300px !important; /* Set a fixed width for all images */
+    height: 200px !important; /* Set a fixed height for all images */
+  }
+  
+  .body {
+    background-color: black;
+    color: white; 
+  }
+  
+  body {
+    background-color: black !important;
+    color: white !important;
+  }
+
+  
+  /* Change the color of both the title and description */
+.carousel-caption h4,
+.carousel-caption p {
+  color: #e22b2b98;
+}
+
+.carousel-caption h4,
+.carousel-caption p { 
+    font-family: 'Arial', sans-serif; /* Use a specific font */
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Use a bold font */
+  }
+
+  .carousel-caption h4,
+  .carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white; /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+  }
+  
+  .carousel-canption h4
+  .carousel-canption  p {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white; /* White text */
+  }
+  
+  .carousel-caption:hover h4
+  .carousel-caption:hover p {
+    background-color: rgba(255, 0, 0, 0.7); /* Semi-transparent red background on hover */
+    border: 2px solid white; /* White border on hover */
+  }
+
+  .carousel-caption h4
+  .carousel-caption p  {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white; /* White text */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .carousel-caption:hover h4
+  .carousel-caption:hover p {
+    background-color: rgba(255, 0, 0, 0.7); /* Semi-transparent red background on hover */
+  }
+
+  /* .Card{
+
+    background: black;
+  } */
+  .Card {
+    width: 650px; /* Adjust the card width as needed */
+    height: 450px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    margin: 20px; /* Add margin for spacing between cards */
+    overflow: hidden; /* Hide overflowing content */
+    transition: transform 0.3s ease; /* Add a smooth hover effect */
+}
+
+.Card:hover {
+    transform: scale(1.20); /* Scale up the card on hover */
+}
+
+/* Card image */
+.Card img {
+    width: 100%;
+    height: 250px;
+}
+
+/* Card content */
+.Card-content {
+    padding: 20px;
+}
+
+.Card-content h3 {
+    margin: 10;
+    font-size: 1.5rem; /* Adjust the title font size */
+}
+
+.Card-content p {
+    margin: 20px 20px;
+}
+
+/* .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+}
+
+.card-text {
+  padding: 10px;
+  text-align: center;
+} */
